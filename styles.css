@@ -1,0 +1,76 @@
+body{
+  background: black;
+/*background: linear-gradient(90deg, rgba(131, 214, 252, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);*/
+color: whitesmoke;
+}
+.title{
+  color: yellowgreen;
+  background: #22C1C3;
+background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22C1C3", endColorstr="#FDBB2D", GradientType=0);
+background-clip: text;
+color: transparent;
+}
+form{
+  width:500px;
+}
+fieldset{
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+}
+input{
+  background-color: white;
+}
+input:optional{
+  border:1px solid red;
+}
+input:read-only{
+  background-color: royalblue;
+  color: lightcyan;
+}
+input[type="radio"]:checked{
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked +label{
+  color: darkred;
+}
+input[type="submit"]{
+  
+}
+select{
+  background-color: darkcyan;
+  color: orangered;
+  cursor: pointer;
+}
+input[type="text"]+span{
+  display: none;
+}
+input[type="text"]:hover +span{
+  display: inline;
+}
+img{
+  display:none;
+}
+input[type="email"]:focus:valid~img#valid{
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid~img#invalid{
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]+span{
+  display: none;
+}
+input[type="email"]:hover +span{
+  display: inline;
+}
+legend{
+  background-color: darkcyan;
+  color: whitesmoke;
+}
